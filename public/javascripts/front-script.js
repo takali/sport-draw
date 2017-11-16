@@ -1,6 +1,9 @@
 $( function() {
 
-	 var socket = io('//localhost:3000');
+	var host = process.env.HOST || '//localhost:3000';
+	
+		var socket = io(host);
+		
 		socket.on('moveTeam', function (data) {
 			moveTeamEasy(data, socket);
 		});
