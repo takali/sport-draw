@@ -1,6 +1,7 @@
 $( function() {
 
-	var host = process.env.HOST || '//localhost:3000';
+	// var host = process.env.HOST || '//localhost:3000';
+	var host = '//tos-module.herokuapp.com';
 	
 		var socket = io(host);
 		
