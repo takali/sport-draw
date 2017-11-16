@@ -1,0 +1,164 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.border-bloc {
+  border: solid 1px grey;
+}
+
+.bloc-left {
+  float: left;
+}
+
+.bloc-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.hats {
+  width: 200px;
+}
+
+.hat {
+  width: 160px;
+  padding: 5px;
+}
+.hat .title {
+  text-align: center;
+}
+
+.country {
+  margin: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+.country.dropped {
+  background-color: LightBlue;
+}
+.country.animated {
+  -webkit-animation: clear-a-team 1s;
+          animation: clear-a-team 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.country img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.country .undo {
+  display: none;
+}
+
+.groups {
+  width: 720px;
+}
+
+.group {
+  width: 180px;
+}
+.group .title {
+  text-align: center;
+}
+.group .elem.ui-droppable-hover {
+  background-color: red;
+}
+
+#front .group .elem {
+  height: 45px;
+}
+#front .group .elem .item {
+  display: none;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+#front .group .elem .item.animated {
+  display: block;
+  -webkit-animation: pop-a-team 1.5s;
+          animation: pop-a-team 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+#front .group .elem .item img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#front .group .elem .item .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+#front .group .elem .item .title {
+  height: 100%;
+  vertical-align: middle;
+}
+
+@-webkit-keyframes pop-a-team {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    display: block;
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pop-a-team {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    display: block;
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes clear-a-team {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+    display: block;
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotate(180deg);
+            transform: scale(0.5) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: scale(0) rotate(360deg);
+            transform: scale(0) rotate(360deg);
+  }
+}
+@keyframes clear-a-team {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+    display: block;
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotate(180deg);
+            transform: scale(0.5) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: scale(0) rotate(360deg);
+            transform: scale(0) rotate(360deg);
+  }
+}

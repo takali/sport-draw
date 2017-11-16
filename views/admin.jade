@@ -1,0 +1,44 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome Admin to #{title}
+
+	#back
+
+		.hats.bloc-left
+			each hat, i in h
+				if (i%2==0)
+					.hat.border-bloc
+						p.title= 'Chapeau ' + hat.value
+						.countries
+							each country in c
+								if hat.value == country.chapeau
+									.country.border-bloc.ui-widget-content(data-key=(country.value), data-id=(country.flag))
+										img(src= "/images/flags/4x3/" + country.flag +".svg", alt=country.value, style='height:20px')
+										span.title= country.value
+										span.undo=x
+		.groups.bloc-left
+			each group, index in g
+				if(index == 4)
+					.clear
+				.group.bloc-left(data-key=(group.value))
+					p.title= 'Groupe ' + group.value
+					- for (var i = 1; i <= e; ++i) {
+						.elem.border-bloc(data-key=(i))
+							p=i
+					- }
+		.hats.bloc-right
+			each hat, i in h
+				if (i%2==1)
+					.hat.border-bloc
+						p.title= 'Chapeau ' + hat.value
+						.countries
+							each country in c
+								if hat.value == country.chapeau
+									.country.border-bloc.ui-widget-content(data-key=(country.value), data-id=(country.flag))
+										img(src= "/images/flags/4x3/" + country.flag +".svg", alt=country.value, style='height:20px')
+										span.title= country.value
+
+block extra-js
+	script(src='/javascripts/admin-script.js')

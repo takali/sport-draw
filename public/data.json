@@ -1,0 +1,63 @@
+{"tos": {
+    "title": "Tirage au sort",
+    "competition": "Coupe Du Monde 2018",
+    "chapeau": {
+        "list": [
+          {"value": 1, "color": "red"},
+          {"value": 2, "color": "red"},
+          {"value": 3, "color": "red"},
+          {"value": 4, "color": "red"}
+        ]
+    },
+    "country": {
+        "list": [
+          {"value": "Russie", "flag": "ru", "chapeau": 1, "group": null, "position": 0},
+          {"value": "Allemagne", "flag": "de", "chapeau": 1, "group": null, "position": 0},
+          {"value": "Brésil", "flag": "br", "chapeau": 1, "group": null, "position": 0},
+          {"value": "France", "flag": "fr", "chapeau": 1, "group": null, "position": 0},
+          {"value": "Portugal", "flag": "pt", "chapeau": 1, "group": null, "position": 0},
+          {"value": "Argentine", "flag": "ar", "chapeau": 1, "group": null, "position": 0},
+          {"value": "Pologne", "flag": "pl", "chapeau": 1, "group": null, "position": 0},
+          {"value": "Belgique", "flag": "be", "chapeau": 1, "group": null, "position": 0},
+          
+          {"value": "Espagne", "flag": "es", "chapeau": 2, "group": null, "position": 0},          
+          {"value": "Suisse", "flag": "ch", "chapeau": 2, "group": null, "position": 0},
+          {"value": "Angleterre", "flag": "gb-eng", "chapeau": 2, "group": null, "position": 0},
+          {"value": "Colombie", "flag": "co", "chapeau": 2, "group": null, "position": 0},
+          {"value": "Mexique", "flag": "mx", "chapeau": 2, "group": null, "position": 0},
+          {"value": "Uruguay", "flag": "uy", "chapeau": 2, "group": null, "position": 0},
+          {"value": "Croatie", "flag": "hr", "chapeau": 2, "group": null, "position": 0},
+          {"value": "Pérou", "flag": "pe", "chapeau": 2, "group": null, "position": 0},
+          
+          {"value": "Danemark", "flag": "dk", "chapeau": 3, "group": null, "position": 0},
+          {"value": "Islande", "flag": "is", "chapeau": 3, "group": null, "position": 0},
+          {"value": "Costa Rica", "flag": "cr", "chapeau": 3, "group": null, "position": 0},
+          {"value": "Suède", "flag": "se", "chapeau": 3, "group": null, "position": 0},
+          {"value": "Tunisie", "flag": "tn", "chapeau": 3, "group": null, "position": 0},
+          {"value": "Egypte", "flag": "eg", "chapeau": 3, "group": null, "position": 0},
+          {"value": "Sénégal", "flag": "sn", "chapeau": 3, "group": null, "position": 0},
+          {"value": "Iran", "flag": "ir", "chapeau": 3, "group": null, "position": 0},
+          
+          {"value": "Corée du Sud", "flag": "kr", "chapeau": 4, "group": null, "position": 0},
+          {"value": "Arabie S.", "flag": "sa", "chapeau": 4, "group": null, "position": 0},
+          {"value": "Panama", "flag": "pa", "chapeau": 4, "group": null, "position": 0},
+          {"value": "Maroc", "flag": "ma", "chapeau": 4, "group": null, "position": 0},
+          {"value": "Nigéria", "flag": "ng", "chapeau": 4, "group": null, "position": 0},
+          {"value": "Japon", "flag": "jp", "chapeau": 4, "group": null, "position": 0},
+          {"value": "Australie", "flag": "au", "chapeau": 4, "group": null, "position": 0},
+          {"value": "Serbie", "flag": "rs", "chapeau": 4, "group": null, "position": 0}
+        ]
+    },
+    "group": {
+        "list": [
+          {"value": "A", "color": "red"},
+          {"value": "B", "color": "red"},
+          {"value": "C", "color": "red"},
+          {"value": "D", "color": "red"},
+          {"value": "E", "color": "red"},
+          {"value": "F", "color": "red"},
+          {"value": "G", "color": "red"},
+          {"value": "H", "color": "red"}
+        ]
+    }
+}}    
