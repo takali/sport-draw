@@ -15,11 +15,14 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET home page. */
-router.get('/front/tos', function(req, res, next) {
+router.get('/front/tos/:sport/:competition', function(req, res, next) {
 
-	res.io.emit("socketToMe", "test");
+	const sport = req.params.sport,
+       competition = req.params.competition;
 
-	let reqPath = path.join(__dirname, '../public/data.json');
+	// res.io.emit("socketToMe", "test");
+
+	let reqPath = path.join(__dirname, '../public/data/'+sport+'/'+competition+'.json');
 	fs.readFile(reqPath , 'utf8', function (err, data) {
 		//Handle Error
 		if(!err) {

@@ -1,7 +1,6 @@
 $( function() {
 
-	// var host = process.env.HOST || '//localhost:3000';
-	var host = '//tos-module.herokuapp.com';
+	var host = 'http://localhost:3000';
 	
 		var socket = io(host);
 		
@@ -9,25 +8,12 @@ $( function() {
 			moveTeamEasy(data, socket);
 		});
 
-	function moveTeam(data){
-		/*
-		identifier la source
-		identifier la target
-		passer la source en absolute
-		la deplacer sur la target
-		*/
-	}
-
 	function removeTeam(data){
 		
 	}
 
 	function moveTeamEasy(data, socket){
-		/*
-		copy div source into target
-		hide source
-		show target
-		*/
+		
 		var position = data.position - 1;
 		var source   = $(".country[data-id='" + data.code + "']");
 		
