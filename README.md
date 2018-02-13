@@ -4,10 +4,10 @@ Small tool for sport competition draw. Need a json with all the data (team, flag
 
 # Launch #
 
-npm install
-npm start
-Back : localhost:3000/admin/interface/football/wc2018
-Front : localhost:3000/front/tos/football/wc2018
+* npm install
+* npm start
+* Back : localhost:3000/admin/interface/football/wc2018
+* Front : localhost:3000/front/tos/football/wc2018
 
 # TODO #
 Lot of things to improve this tools :
